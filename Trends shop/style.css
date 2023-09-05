@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/* Navbar */
+#navbar{
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: .5rem 5rem;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.10);
+  background: black;
+}
+.navbar .navbar-brand {
+  font-size: 40px ;
+  font-weight: 600;
+  color: orchid !important;
+
+}
+#navbarSupportedContent a{
+  color: #fff;
+  border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+  border-bottom: 2px solid orchid ;
+}
+#navbarSupportedContent button{
+  background:orchid ;
+  color: white;
+  border-radius: 20px;
+}
+section{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Home */
+#home{
+  background: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.5)), url(Images/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+
+}
+#home h1{
+  color: white;
+  font-size: 50px;
+  letter-spacing: 3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#home p{
+  color: white;
+  font-size: 18px;
+}
+#home .input-group{
+  width: 40%;
+  height: 40px;
+} .signin{
+  background-color: orchid  !important;
+  color: white !important;
+}
+.signin:hover{
+  background-color:rgb(112, 27, 109)  !important ;
+}
+.signin:active{
+  opacity: 0.5;
+}
+
+/* About */
+
+#about{
+  background:whitesmoke;
+}
+#about h1{
+  font-weight: 600;
+  font-size: 50px;
+  color: solid black;
+  font-weight: bolder;
+}
+
+/* Product */
+#product {
+  background: whitesmoke !important;
+
+}
+
+#product h1{
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+#product img{
+  width: 150px;
+  height: 200px;
+}
+#product .card-body{
+  font-weight: bold;
+}
+.card{
+  width: 250px;
+  height: 300px;
+  border: none !important;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.10);
+  border-radius: 20px !important;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 60px;
+}
+
+
+/* Contact */
+
+#contact{
+  background: whitesmoke !important;
+}
+
+#contact img{
+  height: 80%;
+  margin-top: 10px;
+}
+.box{
+  width: 80% !important;
+  margin-top: 10px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  column-gap: 5px;
+}
+#contact input{
+  margin: 12px 0;
+}
+#contact textarea{
+  margin: 12px 0;
+}
+
+/* Footer */
+
+footer{
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+}

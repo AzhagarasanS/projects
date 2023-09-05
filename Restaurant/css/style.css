@@ -1,0 +1,152 @@
+:root{
+    --yellow:#FFB84C;
+    --orange:#EA906C;
+    --green:#98D8AA;
+    --white:whitesmoke;
+}
+
+
+body,h2{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.landing{
+    background-image: url('../media/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--white);
+}
+header a{
+    text-decoration: none;
+    color:var(--yellow);
+    padding: 1em;
+    min-width: 120px;
+}
+header{
+    display: flex;
+    row-gap: 1em;
+    flex-wrap: wrap;
+}
+#logo{
+    flex:3;
+    font-size: 2em;
+    min-width: 260px;
+
+}
+nav{
+    flex: 2;
+    align-items: center;
+    display: flex;
+}
+nav a{
+    flex:1;
+    
+}
+nav a:hover{
+    color: var(--green);
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2em;
+}
+.tagline1{
+    color:#EEE2DE;
+    font-size: 2.5em;
+    font-weight: bolder;
+
+}
+.tagline2{
+    color: var(--yellow);
+    font-size: 1.4em;
+}
+.maintext div{
+    margin-top: .75em;
+}
+.maintext button{
+    width: 25vh;
+    font-style:italic;
+    margin-top: 2em;
+    border-radius: 15px;
+    padding: 10px;
+    /* background-color: var(--green); */
+    border-color: var(--white);
+    font-size: 15px;
+}
+.maintext button:hover{
+    transform: scale(1.1);
+
+}
+.callus{
+    font-size: 1.3em;
+}
+.menu{
+    display: grid;
+    background: linear-gradient(to left,rgb(24, 22, 29),rgb(99, 100, 105));
+    color: var(--white);
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr))
+
+}
+#menuheading,#locheading{
+    background: linear-gradient(to left,rgb(24, 22, 29),rgb(99, 100, 105));
+    font-size: 2em;
+    color:var(--orange);
+    display: flex;
+    justify-content: center;
+}
+.menu th {
+    color: var(--orange);
+    font-size: 1.4em;
+}
+table{
+    width: 100%;
+    padding: 1em;
+
+
+}
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+
+}
+.menu td:nth-child(1){
+    flex: 1;
+    justify-self:left ;
+
+}
+.menu td:nth-child(2){
+    justify-self: right;
+}
+.Maincourse{
+    grid-row: span 2;
+}
+.location{
+    background: linear-gradient(to left,rgb(24, 22, 29),rgb(99, 100, 105));
+    color: var(--white); 
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.location h2{
+    color: var(--orange);
+    margin-bottom: .7em;
+
+}
+.location div{
+    flex: 1;
+    padding: 1em;
+    min-width: 300px;
+}
+#copy-right{
+    background:rgb(24, 22, 29);
+    color: var(--white);
+    padding: .25em 1em;
+}
+header i,nav i{
+    margin-right: .5em;
+}
